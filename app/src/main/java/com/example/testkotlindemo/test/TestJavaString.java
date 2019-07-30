@@ -1,4 +1,4 @@
-package com.example.testkotlindemo;
+package com.example.testkotlindemo.test;
 
 public class TestJavaString {
 

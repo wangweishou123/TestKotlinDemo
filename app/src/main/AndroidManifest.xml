@@ -11,16 +11,17 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".PersonListActivity">
+        <activity android:name=".test.PersonListActivity">
         </activity>
-        <activity android:name=".TwoActivity"/>
-        <activity android:name=".MainActivity">
+        <activity android:name=".test.TwoActivity"/>
+        <activity android:name=".test.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".mode.OpenCloseModeActivity"/>
     </application>
 
 </manifest>

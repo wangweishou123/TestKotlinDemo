@@ -1,10 +1,10 @@
-package com.example.testkotlindemo
+package com.example.testkotlindemo.test
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.LinearLayoutManager.VERTICAL
 import android.util.Log
+import com.example.testkotlindemo.R
 import kotlinx.android.synthetic.main.activity_person_list.*
 
 class PersonListActivity : AppCompatActivity() {
@@ -22,14 +22,14 @@ class PersonListActivity : AppCompatActivity() {
         }else{
             Log.e("qwe","======>null")
         }
-        person_rv.adapter=PersonListAdapter(list!!)
+        person_rv.adapter= PersonListAdapter(list!!)
     }
     fun initData(list:ArrayList<Student>){
-        list.add(Student("张三","男"))
-        list.add(Student("李四","男"))
-        list.add(Student("王舞","女"))
-        list.add(Student("赵柳","女"))
-        list.add(Student("小七","男"))
+        list.add(Student("张三", "男"))
+        list.add(Student("李四", "男"))
+        list.add(Student("王舞", "女"))
+        list.add(Student("赵柳", "女"))
+        list.add(Student("小七", "男"))
         list.add (Student("张三*", "男"))
         list.add(Student("李四*", "男"))
         list.add(Student("王舞*", "女"))

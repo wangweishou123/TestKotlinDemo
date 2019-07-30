@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".PersonListActivity">
+        tools:context=".test.PersonListActivity">
     <TextView
             android:id="@+id/person_list_title_tv"
             android:layout_width="wrap_content"

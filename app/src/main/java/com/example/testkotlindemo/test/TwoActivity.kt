@@ -1,10 +1,9 @@
-package com.example.testkotlindemo
+package com.example.testkotlindemo.test
 
-import android.content.Context
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
+import com.example.testkotlindemo.R
 import kotlinx.android.synthetic.main.activity_two.*
 
 class TwoActivity : AppCompatActivity() {

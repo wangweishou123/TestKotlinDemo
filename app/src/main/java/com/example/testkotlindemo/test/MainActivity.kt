@@ -1,10 +1,11 @@
-package com.example.testkotlindemo
+package com.example.testkotlindemo.test
 
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.text.TextUtils
 import android.widget.Toast
+import com.example.testkotlindemo.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity() {
     }
     fun jumpActivity(){
         var jumpIntent =Intent()
-        var student=Student()
+        var student= Student()
 //        student.nickName=user_name_edit.text.toString()
 //        student.passWord=pwd_edit.text.toString()
         student.age=40
@@ -42,7 +43,7 @@ class MainActivity : AppCompatActivity() {
 
 //        jumpIntent.putExtra("hello","this is Tony Stark")
         jumpIntent.putExtra("student",student)
-        jumpIntent.setClass(this,TwoActivity::class.java);
+        jumpIntent.setClass(this, TwoActivity::class.java);
         startActivity(jumpIntent)
     }
     fun checkUserNameAndPwd(name:String, pwd:String) :Int{

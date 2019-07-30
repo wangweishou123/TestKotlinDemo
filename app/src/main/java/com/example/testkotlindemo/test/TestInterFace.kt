@@ -1,10 +1,9 @@
-package com.example.testkotlindemo
+package com.example.testkotlindemo.test
 
-import android.view.View
 import android.widget.TextView
 
 class TestInterFace {
-    var tvOnClickListener:TvOnClickListener?=null
+    var tvOnClickListener: TvOnClickListener?=null
 
 
     interface TvOnClickListener{

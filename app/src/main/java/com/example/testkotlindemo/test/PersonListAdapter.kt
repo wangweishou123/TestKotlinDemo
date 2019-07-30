@@ -1,8 +1,9 @@
-package com.example.testkotlindemo
+package com.example.testkotlindemo.test
 
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
+import com.example.testkotlindemo.R
 import kotlinx.android.synthetic.main.item_person.view.*
 
 class PersonListAdapter(listData:ArrayList<Student>) :RecyclerView.Adapter<PersonListAdapter.ViewHolder>() {
@@ -13,7 +14,13 @@ class PersonListAdapter(listData:ArrayList<Student>) :RecyclerView.Adapter<Perso
 //    }
 
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): ViewHolder {
-        return ViewHolder(View.inflate(p0.context,R.layout.item_person,null))
+        return ViewHolder(
+            View.inflate(
+                p0.context,
+                R.layout.item_person,
+                null
+            )
+        )
     }
 
     override fun getItemCount(): Int {

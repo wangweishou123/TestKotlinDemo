@@ -1,4 +1,4 @@
-package com.example.testkotlindemo
+package com.example.testkotlindemo.test
 
 class MyClass {
     companion object { }  // 将被称为 "Companion"
