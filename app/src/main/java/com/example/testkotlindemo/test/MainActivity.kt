@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
 //                Toast.makeText(this,"账号密码错误",Toast.LENGTH_SHORT).show()
 //            }
         }
+
     }
     fun jumpActivity(){
         var jumpIntent =Intent()
