@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-    fun jumpActivity(){
+    private fun jumpActivity(){
         var jumpIntent =Intent()
         var student= Student()
 //        student.nickName=user_name_edit.text.toString()
@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         jumpIntent.setClass(this, TwoActivity::class.java);
         startActivity(jumpIntent)
     }
-    fun checkUserNameAndPwd(name:String, pwd:String) :Int{
+    private fun checkUserNameAndPwd(name:String, pwd:String) :Int{
         if (!TextUtils.isEmpty(name.trim())&&!TextUtils.isEmpty(pwd.trim())){
             if (name.equals(userName)&&pwd.equals(password)){
                 return 1
