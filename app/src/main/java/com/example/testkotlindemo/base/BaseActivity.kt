@@ -15,7 +15,6 @@ import android.widget.LinearLayout
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.annotation.ColorInt
-import androidx.annotation.Nullable
 import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
 import butterknife.ButterKnife
@@ -51,7 +50,8 @@ abstract class BaseActivity<T : IBasePresenter> : AppCompatActivity(), IBaseView
             return typedValue.data
         }
 
-    protected fun onCreate(@Nullable savedInstanceState: Bundle) {
+    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //强制竖屏
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
